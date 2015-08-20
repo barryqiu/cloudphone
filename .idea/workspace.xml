@@ -40,8 +40,8 @@
       <file leaf-file-name="MySQLDB.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MySQLDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3559719">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.53395784">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
               <folding>
                 <marker date="1440040699073" expanded="true" signature="1586:1599" placeholder="INSERT INTO ..." />
                 <marker date="1440040699073" expanded="true" signature="2335:2349" placeholder="DELETE FROM ..." />
@@ -422,7 +422,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440041468747</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="database">
+      <created>1440041481903</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1440041481903</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -610,8 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MySQLDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3559719">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.53395784">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
           <folding>
             <marker date="1440040699073" expanded="true" signature="1586:1599" placeholder="INSERT INTO ..." />
             <marker date="1440040699073" expanded="true" signature="2335:2349" placeholder="DELETE FROM ..." />
