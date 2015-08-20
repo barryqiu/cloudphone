@@ -21,7 +21,6 @@ class MySQLDB:
         except MySQLdb.Error as e:
             print("Mysql Error %d : %s" % (e.args[0], e.args[1]))
 
-
     def getConnection(self):
         return MySQLdb.Connect(
             host=self.DB_HOST,
@@ -32,10 +31,8 @@ class MySQLDB:
             charset=self.CHARSET
         )
 
-
     def __del__(self):
         self.close()
-
 
     def query(self, sql):
         try:
@@ -44,11 +41,9 @@ class MySQLDB:
         except MySQLdb.Error as e:
             print("Mysql Error:%s\nSQL:%s" % (e, sql))
 
-
     def fetchRow(self):
         result = self.cur.fetchone()
         return result
-
 
     def fetchAll(self):
         result = self.cur.fetchall()
@@ -61,7 +56,6 @@ class MySQLDB:
                 d.append(_d)
         return d
 
-
     def insert(self, table_name, data):
         columns = data.keys()
         _prefix = "".join(['INSERT INTO `', table_name, '`'])
@@ -70,7 +64,6 @@ class MySQLDB:
         _sql = "".join([_prefix, "(", _fields, ") VALUES (", _values, ")"])
         _params = [data[key] for key in columns]
         return self.cur.execute(_sql, tuple(_params))
-
 
     def update(self, tbname, data, condition):
         _fields = []
@@ -81,28 +74,22 @@ class MySQLDB:
 
         return self.cur.execute(_sql)
 
-
     def delete(self, tbname, condition):
         _prefix = "".join(['DELETE FROM  `', tbname, '`', 'WHERE'])
         _sql = "".join([_prefix, condition])
         return self.cur.execute(_sql)
 
-
     def getLastInsertId(self):
         return self.cur.lastrowid
-
 
     def rowcount(self):
         return self.cur.rowcount
 
-
     def commit(self):
         self.conn.commit()
 
-
     def rollback(self):
         self.conn.rollback()
-
 
     def close(self):
         self.cur.close()
