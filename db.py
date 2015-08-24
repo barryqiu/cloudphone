@@ -5,7 +5,7 @@ import MySQLdb
 OperationalError = MySQLdb.OperationalError
 
 
-class MySQLDB:
+class DB:
     def __init__(self, DB_HOST, DB_PORT, DB_USER, DB_PWD, DB_NAME, CHARSET="utf8"):
         self.DB_HOST = DB_HOST
         self.DB_PORT = DB_PORT
@@ -104,7 +104,7 @@ def md5(str):
 
 
 if __name__ == '__main__':
-    n = MySQLDB('127.0.0.1', 3306, 'root', '', 'cloudphone')
+    n = DB('127.0.0.1', 3306, 'root', '', 'cloudphone')
     tbname = 'user'
     a = ({'name': '3', 'password': md5('3')}, {'name': '4', 'password': md5('4')}, {'name': '5', 'password': md5('5')})
     for d in a:
